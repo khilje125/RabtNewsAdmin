@@ -76,7 +76,6 @@ namespace NewsAppAdmin.Controllers
             else
             {
                 ModelState.AddModelError("","Check error of form; Please correct to continue!");
-                return View();
             }
             return View();
         }
@@ -94,6 +93,7 @@ namespace NewsAppAdmin.Controllers
             {
                 DALUtility.ErrorLog(ex.Message, "AdminController, Logout");
             }
+            return View();
         }
 
         // GET: /SignUp/

@@ -915,17 +915,14 @@
       <Project>{97189cdd-6daa-4321-a2dc-392d025a7b7f}</Project>
       <Name>NewsAppAdmin.BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\NewsAppAdmin.DAL\NewsAppAdmin.DAL.csproj">
+      <Project>{88b11ef3-afdb-49a6-9c21-adb7e8141f30}</Project>
+      <Name>NewsAppAdmin.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NewsAppAdmin.MODEL\NewsAppAdmin.MODEL.csproj">
       <Project>{c4ea5c4a-b4a5-453f-9e48-b57aff6e563a}</Project>
       <Name>NewsAppAdmin.MODEL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\RabtDAL\NewsAppAdmin.DAL.csproj">
-      <Project>{88b11ef3-afdb-49a6-9c21-adb7e8141f30}</Project>
-      <Name>NewsAppAdmin.DAL</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="ConnectionStrings.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

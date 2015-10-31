@@ -32,3 +32,37 @@ C:\Users\MALIK ZUNAIR KHILJE\Documents\Visual Studio 2013\Projects\NewsApplicati
 C:\Users\MALIK ZUNAIR KHILJE\Documents\Visual Studio 2013\Projects\NewsApplication\NewsAppAdmin\bin\NewsAppAdmin.BLL.pdb
 C:\Users\MALIK ZUNAIR KHILJE\Documents\Visual Studio 2013\Projects\NewsApplication\NewsAppAdmin\bin\NewsAppAdmin.MODEL.pdb
 C:\Users\MALIK ZUNAIR KHILJE\Documents\Visual Studio 2013\Projects\NewsApplication\NewsAppAdmin\bin\RabtDAL.pdb
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\obj\Debug\NewsAppAdmin.csprojResolveAssemblyReference.cache
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\obj\Debug\NewsAppAdmin.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\NewsAppAdmin.dll.config
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\NewsAppAdmin.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\NewsAppAdmin.pdb
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\Microsoft.Web.Infrastructure.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\NewsAppAdmin.BLL.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\NewsAppAdmin.MODEL.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\Newtonsoft.Json.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\RabtDAL.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\System.Net.Http.Formatting.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\System.Web.Helpers.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\System.Web.Http.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\System.Web.Http.WebHost.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\System.Web.Mvc.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\System.Web.Razor.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\System.Web.WebPages.Deployment.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\System.Web.WebPages.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\System.Web.WebPages.Razor.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\NewsAppAdmin.BLL.pdb
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\NewsAppAdmin.MODEL.pdb
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\RabtDAL.pdb
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\Newtonsoft.Json.xml
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\System.Net.Http.Formatting.xml
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\System.Web.Helpers.xml
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\System.Web.Http.xml
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\System.Web.Http.WebHost.xml
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\System.Web.Mvc.xml
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\System.Web.Razor.xml
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\System.Web.WebPages.xml
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\System.Web.WebPages.Deployment.xml
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\System.Web.WebPages.Razor.xml
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\obj\Debug\NewsAppAdmin.pdb

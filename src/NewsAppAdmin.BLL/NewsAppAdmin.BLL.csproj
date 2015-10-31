@@ -44,13 +44,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\NewsAppAdmin.DAL\NewsAppAdmin.DAL.csproj">
+      <Project>{88b11ef3-afdb-49a6-9c21-adb7e8141f30}</Project>
+      <Name>NewsAppAdmin.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NewsAppAdmin.MODEL\NewsAppAdmin.MODEL.csproj">
       <Project>{c4ea5c4a-b4a5-453f-9e48-b57aff6e563a}</Project>
       <Name>NewsAppAdmin.MODEL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RabtDAL\NewsAppAdmin.DAL.csproj">
-      <Project>{88b11ef3-afdb-49a6-9c21-adb7e8141f30}</Project>
-      <Name>NewsAppAdmin.DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
