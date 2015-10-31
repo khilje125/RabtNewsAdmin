@@ -1,0 +1,5 @@
+C:\Users\MALIK ZUNAIR KHILJE\Documents\Visual Studio 2013\Projects\NewsApplication\NewsAppAdmin.MODEL\bin\Debug\NewsAppAdmin.MODEL.dll
+C:\Users\MALIK ZUNAIR KHILJE\Documents\Visual Studio 2013\Projects\NewsApplication\NewsAppAdmin.MODEL\bin\Debug\NewsAppAdmin.MODEL.pdb
+C:\Users\MALIK ZUNAIR KHILJE\Documents\Visual Studio 2013\Projects\NewsApplication\NewsAppAdmin.MODEL\obj\Debug\NewsAppAdmin.MODEL.csprojResolveAssemblyReference.cache
+C:\Users\MALIK ZUNAIR KHILJE\Documents\Visual Studio 2013\Projects\NewsApplication\NewsAppAdmin.MODEL\obj\Debug\NewsAppAdmin.MODEL.dll
+C:\Users\MALIK ZUNAIR KHILJE\Documents\Visual Studio 2013\Projects\NewsApplication\NewsAppAdmin.MODEL\obj\Debug\NewsAppAdmin.MODEL.pdb
