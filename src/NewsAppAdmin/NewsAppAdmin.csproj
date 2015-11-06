@@ -555,6 +555,8 @@
     <Content Include="Scripts\dist\js\sb-admin-2.js" />
     <Content Include="Scripts\js\CustomBsValidation.js" />
     <Content Include="Scripts\js\flot-data.js" />
+    <Content Include="Scripts\js\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\js\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\js\morris-data.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -919,10 +921,20 @@
       <Project>{88b11ef3-afdb-49a6-9c21-adb7e8141f30}</Project>
       <Name>NewsAppAdmin.DAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\NewsAppAdmin.FeedScrapper\NewsAppAdmin.FeedScrapper.csproj">
+      <Project>{bd69055b-f2bb-4bd0-a725-159778448062}</Project>
+      <Name>NewsAppAdmin.FeedScrapper</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NewsAppAdmin.MODEL\NewsAppAdmin.MODEL.csproj">
       <Project>{c4ea5c4a-b4a5-453f-9e48-b57aff6e563a}</Project>
       <Name>NewsAppAdmin.MODEL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_FeedDataList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_FeedList.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

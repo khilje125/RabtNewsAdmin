@@ -66,3 +66,6 @@ D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\System.Web.WebPage
 D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\System.Web.WebPages.Deployment.xml
 D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\System.Web.WebPages.Razor.xml
 D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\obj\Debug\NewsAppAdmin.pdb
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\NewsAppAdmin.FeedScrapper.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\HtmlAgilityPack.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin\bin\NewsAppAdmin.FeedScrapper.pdb

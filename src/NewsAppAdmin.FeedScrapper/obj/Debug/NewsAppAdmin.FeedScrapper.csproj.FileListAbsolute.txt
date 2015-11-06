@@ -1,0 +1,9 @@
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.FeedScrapper\obj\Debug\NewsAppAdmin.FeedScrapper.csprojResolveAssemblyReference.cache
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.FeedScrapper\bin\Debug\NewsAppAdmin.FeedScrapper.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.FeedScrapper\bin\Debug\NewsAppAdmin.FeedScrapper.pdb
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.FeedScrapper\bin\Debug\HtmlAgilityPack.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.FeedScrapper\bin\Debug\NewsAppAdmin.MODEL.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.FeedScrapper\bin\Debug\SmartThreadPool.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.FeedScrapper\bin\Debug\NewsAppAdmin.MODEL.pdb
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.FeedScrapper\obj\Debug\NewsAppAdmin.FeedScrapper.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.FeedScrapper\obj\Debug\NewsAppAdmin.FeedScrapper.pdb

@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
+using NewsAppAdmin.FeedScrapper;
+using System.Threading;
 
 namespace NewsAppAdmin
 {
@@ -19,6 +21,23 @@ namespace NewsAppAdmin
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+            string url = "http://www.bbc.com/arabic/index.xml";
+            string url3 = "http://arabic.cnn.com/rss";
+            //string url2 = "http://feeds.feedburner.com/techulator/articles";
+
+            ThreadPool.QueueUserWorkItem(new WaitCallback(delegate(object state)
+            {
+                while (true)
+                {
+                    MainScrapper.StartScrapper(url);
+                    Thread.Sleep(2000000);
+                }
+
+            }), null);
+
+
+            //MainScrapper.StartScrapper(url);
         }
     }
 }

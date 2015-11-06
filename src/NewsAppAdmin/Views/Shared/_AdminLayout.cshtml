@@ -375,12 +375,13 @@
     <script src="../Scripts/bower_components/metisMenu/dist/metisMenu.min.js"></script>
     <script src="../Scripts/js/CustomBsValidation.js"></script>
     @RenderSection("masterjs", required: false)
-
+    @RenderSection("feedDataListSection", required: false)
     <!-- DataTables JavaScript -->
     <script src="../Scripts/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
     <script src="../Scripts/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
-
-
+    
+    <script src="~/Scripts/js/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/js/jquery.validate.unobtrusive.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="../Scripts/dist/js/sb-admin-2.js"></script>
 
