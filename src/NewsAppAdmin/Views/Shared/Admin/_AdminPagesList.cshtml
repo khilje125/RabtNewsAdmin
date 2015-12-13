@@ -1,0 +1,89 @@
+﻿@model IEnumerable<NewsAppAdmin.MODEL.ModelAdminPage>
+@{
+    
+    WebGrid grid = new WebGrid(rowsPerPage: 10, canPage: true, canSort: true);
+    grid.Bind(Model, autoSortAndPage: false, rowCount: Model.Count());    
+}
+
+<!-- /.row -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                Admin Pages List
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <div class="dataTable_wrapper">
+                    @*@grid.GetHtml(
+        tableStyle: "table table-striped table-bordered table-hover",
+        headerStyle: "",
+        footerStyle: "",
+        rowStyle: "gradeA",
+        alternatingRowStyle: "gradeC",
+        selectedRowStyle: "gradeX",
+        displayHeader: true,
+        emptyRowCellValue: "-",
+                          columns: new[] {
+                          grid.Column("FeedId",header:"ID",canSort:false),
+                          grid.Column("FeedChannelName"),
+                          grid.Column("FeedCategory"),
+                          grid.Column("FeedTitlePath",header:"Contact No")
+                          },
+                          firstText: "<< First",
+                          previousText: "< Prev",
+                          nextText: "Next >",
+                          lastText: "Last >>"
+
+        )*@
+
+                    <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                        <thead>
+                            <tr>
+                                <th>Edit</th>
+                                <th>Page Id</th>
+                                <th>Page Tilte EN</th>
+                                <th>Page Tilte AR</th>
+                                <th>Page URL</th>
+                                <th>Is Active</th>
+                                <th>Is shown in Menu</th>
+                                <th>Added Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model.Count() > 0)
+                            {
+                                foreach (var item in Model)
+                                {
+                                    <tr class="gradeA">
+                                        <td><a href="@Url.Action("EditFeedData", "Admin", new { id = item.AdminPageID })">Edit</a></td>
+                                        <td>@item.AdminPageID</td>
+                                        <td>@item.AdminPageNameEn</td>
+                                        <td>@item.AdminPageNameAr</td>
+                                        <td width="20%">@item.AdminPageURL</td>
+                                        <td class="center">@(item.IsActive ? "True" : "Flase")</td> 
+                                        <td class="center">@(item.IsShowInMenu ? "True" : "Flase")</td>
+                                        <td class="center">@String.Format("{0:MM/dd/yyyy}", item.AddedDate)</td>
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+
+                                <tr class="gradeA">
+                                    <td colspan="8">No Record Found</td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.table-responsive -->
+
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+    <!-- /.col-lg-12 -->
+</div>

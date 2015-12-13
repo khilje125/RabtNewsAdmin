@@ -7,12 +7,12 @@ C:\Users\MALIK ZUNAIR KHILJE\Documents\Visual Studio 2013\Projects\NewsApplicati
 C:\Users\MALIK ZUNAIR KHILJE\Documents\Visual Studio 2013\Projects\NewsApplication\NewsAppAdmin.BLL\bin\Debug\RabtDAL.pdb
 C:\Users\MALIK ZUNAIR KHILJE\Documents\Visual Studio 2013\Projects\NewsApplication\NewsAppAdmin.BLL\obj\Debug\NewsAppAdmin.BLL.dll
 C:\Users\MALIK ZUNAIR KHILJE\Documents\Visual Studio 2013\Projects\NewsApplication\NewsAppAdmin.BLL\obj\Debug\NewsAppAdmin.BLL.pdb
-D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.BLL\obj\Debug\NewsAppAdmin.BLL.csprojResolveAssemblyReference.cache
-D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.BLL\obj\Debug\NewsAppAdmin.BLL.dll
-D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.BLL\obj\Debug\NewsAppAdmin.BLL.pdb
 D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.BLL\bin\Debug\NewsAppAdmin.BLL.dll
 D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.BLL\bin\Debug\NewsAppAdmin.BLL.pdb
 D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.BLL\bin\Debug\NewsAppAdmin.MODEL.dll
 D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.BLL\bin\Debug\RabtDAL.dll
 D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.BLL\bin\Debug\RabtDAL.pdb
 D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.BLL\bin\Debug\NewsAppAdmin.MODEL.pdb
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.BLL\obj\Debug\NewsAppAdmin.BLL.csprojResolveAssemblyReference.cache
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.BLL\obj\Debug\NewsAppAdmin.BLL.dll
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.BLL\obj\Debug\NewsAppAdmin.BLL.pdb

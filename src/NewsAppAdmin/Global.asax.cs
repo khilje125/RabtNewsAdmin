@@ -30,7 +30,9 @@ namespace NewsAppAdmin
             {
                 while (true)
                 {
-                    MainScrapper.StartScrapper(url);
+                   // MainScrapper.ScrappingData();
+                   // RSSFeedsScrapper.ScrappingData();
+                    TwitterFeedsScrapper.ScrappingData();
                     Thread.Sleep(2000000);
                 }
 

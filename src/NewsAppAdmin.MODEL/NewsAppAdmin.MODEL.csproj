@@ -41,8 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModelTwitterFeedsDetails.cs" />
+    <Compile Include="ModelTwitterFeeds.cs" />
+    <Compile Include="ModelLeftMenu.cs" />
     <Compile Include="ModelAdminUser.cs" />
     <Compile Include="ModelEmailTemplate.cs" />
+    <Compile Include="ModelAdminPage.cs" />
     <Compile Include="ModelFeed.cs" />
     <Compile Include="ModelFeedDetail.cs" />
     <Compile Include="ModelFeedsData.cs" />

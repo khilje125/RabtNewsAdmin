@@ -42,7 +42,7 @@ namespace NewsAppAdmin.BLL
 
         #endregion
 
-        #region "Insert Feed Data"
+        #region "Insert Feed Data List"
       
         public List<ModelFeed> GetFeedDataList(int page = 0)
         {
@@ -73,6 +73,17 @@ namespace NewsAppAdmin.BLL
             return ModelFeedList;
         }
 
+        #endregion
+
+        #region "Get Feeds URLs"
+        public DataTable GetFeedUrls(int? FeedTypeId)
+        { 
+        SqlParameter[] param = new SqlParameter[1];
+
+        param[0] = new SqlParameter("@FeedTypeId", FeedTypeId);
+            return DALCommon.GetDataUsingDataTable("sp_Admin_GetFeedUrlWithScrepeSetting", param);
+        }
+        
         #endregion
     }
 }

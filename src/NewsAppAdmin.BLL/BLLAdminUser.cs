@@ -45,6 +45,19 @@ namespace NewsAppAdmin.BLL
         }
         #endregion
 
+        #region "Insert Admin Form Pages"
+        public int InsertAdminFormPages(string WebFormTitle, string WebFormURL, bool AppearToMenu, bool IsFormAction)
+        {
+            SqlParameter[] param = new SqlParameter[4];
+
+            param[0] = new SqlParameter("@AdminWebFormTitle", WebFormTitle);
+            param[1] = new SqlParameter("@AdminWebFormURL", WebFormURL);
+            param[2] = new SqlParameter("@WillAppearToMenu", AppearToMenu);
+            param[3] = new SqlParameter("@IsFormActive", IsFormAction);
+            return DALCommon.ExecuteNonQuery("sp_Admin_InsertAdminFormPages", param);
+        }
+        #endregion
+
         #region "Get Admin User Details"
         public DataTable GetAdminUserDetailsByEmail(string AdminEmail)
         {

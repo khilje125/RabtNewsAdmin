@@ -15,6 +15,7 @@ namespace NewsAppAdmin.Controllers
     {
         BLLAdminUser bllAdminUser = new BLLAdminUser();
         BLLFeed bllFeed = new BLLFeed();
+        BLLAdminPages bllAdminPages = new BLLAdminPages();
         ModelFeed objModelFeed = new ModelFeed();
         ModelAdminUser objModelAdminUser = new ModelAdminUser();
         //
@@ -129,7 +130,11 @@ namespace NewsAppAdmin.Controllers
 
         public ActionResult AddRssLink()
         {
-            return View();
+            if (Session[DALVariables.AdminUserNo] != null)
+            {
+                return View();
+            }
+            return RedirectToAction("Login", "Admin");
         }
 
         // POST: /AddRssLink/
@@ -140,6 +145,11 @@ namespace NewsAppAdmin.Controllers
             {
                 try
                 {
+                    if (Session[DALVariables.AdminUserNo] == null)
+                    {
+                        return RedirectToAction("Login", "Admin");
+                    }
+                    
                     bllFeed = new BLLFeed();
                     decimal result = 0;
                     result = bllFeed.InsertFeedData(objModelFeed);
@@ -163,6 +173,57 @@ namespace NewsAppAdmin.Controllers
             return View();
         }
 
+        // GET: /FormWebForm/
+
+        public ActionResult FormWebForm()
+        {
+            if (Session[DALVariables.AdminUserNo] == null)
+            {
+                return RedirectToAction("Login", "Admin");
+            }
+
+            return View();
+        }
+
+        // POST: /FormWebForm/
+        [HttpPost]
+        public ActionResult FormWebForm(ModelAdminPage objModelAdminPage)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    if (Session[DALVariables.AdminUserNo] == null)
+                    {
+                        return RedirectToAction("Login", "Admin");
+                    }
+
+                    bllAdminPages = new BLLAdminPages();
+                    decimal result = 0;
+                    objModelAdminPage.AdminPageAddedBy = Convert.ToDouble(Session[DALVariables.AdminUserNo]);
+                    result = bllAdminPages.InsertAdminPage(objModelAdminPage);
+                    if (result > 0)
+                    {
+                        return View();
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("", "Error occured while adding Admin page");
+                        return View();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    DALUtility.ErrorLog(ex.Message, "AdminController, Login");
+                }
+            }
+            else
+            {
+                ModelState.AddModelError("", "Check error of form; Please correct to continue!");
+            }
+            return View();
+        }
+        
         // GET: /RssLinkList/
 
         public PartialViewResult RssLinkList(int page = 0)
@@ -172,9 +233,28 @@ namespace NewsAppAdmin.Controllers
             {
                 List<ModelFeed> bllFeedList =  new List<ModelFeed>();
                 bllFeedList = bllFeed.GetFeedDataList(page);
-                return PartialView("_FeedList", bllFeedList);
+                //return PartialView("_FeedList", bllFeedList);
                 //return PartialView("_FeedDataList", bllFeedList);
-                //return PartialView(customview("_FeedDataList", "Admin"), bllFeedList);
+                return PartialView(customview("_FeedList", "Admin"), bllFeedList);
+                
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        // GET: /AdminPagesList/
+
+        public PartialViewResult AdminPagesList(int page = 0)
+        {
+            try
+            
+            {
+                List<ModelAdminPage> bllModelAdminPage = new List<ModelAdminPage>();
+                bllAdminPages = new BLLAdminPages();
+                bllModelAdminPage = bllAdminPages.GetAdminPagesList();
+                return PartialView(customview("_AdminPagesList", "Admin"), bllModelAdminPage);
                 
             }
             catch (Exception ex)

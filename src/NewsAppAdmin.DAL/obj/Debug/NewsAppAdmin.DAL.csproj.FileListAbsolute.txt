@@ -5,6 +5,5 @@ C:\Users\MALIK ZUNAIR KHILJE\Documents\Visual Studio 2013\Projects\NewsApplicati
 C:\Users\MALIK ZUNAIR KHILJE\Documents\Visual Studio 2013\Projects\NewsApplication\RabtDAL\obj\Debug\RabtDAL.pdb
 D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.DAL\bin\Debug\RabtDAL.dll
 D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.DAL\bin\Debug\RabtDAL.pdb
-D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.DAL\obj\Debug\NewsAppAdmin.DAL.csprojResolveAssemblyReference.cache
 D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.DAL\obj\Debug\RabtDAL.dll
 D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.DAL\obj\Debug\RabtDAL.pdb

@@ -5,6 +5,6 @@ C:\Users\MALIK ZUNAIR KHILJE\Documents\Visual Studio 2013\Projects\NewsApplicati
 C:\Users\MALIK ZUNAIR KHILJE\Documents\Visual Studio 2013\Projects\NewsApplication\NewsAppAdmin.MODEL\obj\Debug\NewsAppAdmin.MODEL.pdb
 D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.MODEL\bin\Debug\NewsAppAdmin.MODEL.dll
 D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.MODEL\bin\Debug\NewsAppAdmin.MODEL.pdb
-D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.MODEL\obj\Debug\NewsAppAdmin.MODEL.csprojResolveAssemblyReference.cache
 D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.MODEL\obj\Debug\NewsAppAdmin.MODEL.dll
 D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.MODEL\obj\Debug\NewsAppAdmin.MODEL.pdb
+D:\PersonalGitProjects\RabtAdmin(Master)\src\NewsAppAdmin.MODEL\obj\Debug\NewsAppAdmin.MODEL.csprojResolveAssemblyReference.cache

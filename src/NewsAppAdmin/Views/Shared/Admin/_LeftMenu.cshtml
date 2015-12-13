@@ -1,0 +1,179 @@
+﻿<!-- Page-Level Demo Scripts - Tables - Use for reference -->
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $(document).on('click', "#side-menu.nav li>a", function () {
+
+            //alert("New Document Clicked");
+            $("#side-menu.nav").find(".active").removeClass("active");
+            var isParentActive = $(this).parent().has('.active');
+           // alert('CHECK PARENT Object Null : ' + isParentActive);
+            if (isParentActive != null) {
+               // $(this).parent().removeClass("active");
+                $(this).parent().find("ul").collapse('toggle');
+            }
+            else
+            {
+                $(this).parent().addClass("active");
+                $(this).parent().find("ul").collapse('toggle');
+            }
+            
+            //var nav = $('#side-menu.nav');
+            //nav.find('a').on('click', function (e) {
+            //    e.preventDefault();
+
+            //    alert("HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
+            //    nav.collapse({
+            //        // marginLeft: "-300px",
+            //    }, 1000);
+            //});
+        });
+        //$("#side-menu.nav li>a").on("click", function () {
+        //    alert('CHECK');
+        //    $("#side-menu.nav").find(".active").removeClass("active");
+        //    $(this).parent().addClass("active");
+        //});
+
+        //var nav = $('#side-menu.nav');
+        //nav.find('a').on('click', function (e) {
+        //    e.preventDefault();
+
+        //    alert("HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
+        //    nav.collapse({
+        //        // marginLeft: "-300px",
+        //    }, 1000);
+        //});
+
+        $("#aTag").on("click", function () {
+            alert('CHECK');
+            $("#side-menu.nav").find(".active").removeClass("active");
+            $(this).parent().addClass("active");
+        });
+
+
+        $.ajax({
+            url: 'MenuHandler.ashx',
+            method: 'get',
+            datatype: 'json',
+            success: function (data) {
+                //alert("MMMMMMM ::::>>> " + $.parseJSON(data));
+
+                //////////SAMPLE STATIC MENU ITEM////////////
+                var staticItem_1 = $('<li ><a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>' + "THIS IS HELP" + '<span class="fa arrow"></span></a>'
+                    + '<ul class="nav nav-second-level collapse"><li><a href="panels-wells.html">Panels and Wells</a></li>'
++ '<li><a href="buttons.html">Buttons</a></li></ul>'
++ '                      </li>');
+
+                var staticItem_2 = '<li>'
+               + '<a href="#" ><i class="fa fa-wrench fa-fw"></i> HOME<span class="fa arrow"></span></a>'
+                       + '<ul class="nav nav-second-level collapse" >'
+                         + '  <li>'
+                          + '     <a href="panels-wells.html">HOME INEER 1</a>'
+                           + '</li>'
+                           + '<li>'
+                            + '   <a href="buttons.html">HOME INNER 2</a>'
+                           + '</li>'
+                       + '</ul>'
+                       + '<!-- /.nav-second-level -->'
+                   + '</li>';
+                //////////SAMPLE STATIC MENU ITEM////////////
+                //Add Sample Static Item in Menu
+                $(staticItem_1).appendTo($('#side-menu'));
+                buildMenu($('#side-menu'), $.parseJSON(data));
+            }
+        });
+    });
+
+    function LeftMenuGenerate() {
+        $.ajax({
+            url: 'MenuHandler.ashx',
+            method: 'get',
+            datatype: 'json',
+            success: function (data) {
+                //buildMenu($('#side-menu'), $.parseJSON(data));
+                buildMenu($('ul.nav'), $.parseJSON(data));
+            }
+        });
+    }
+
+    function buildMenu(parent, item) {
+        $(item).each(function () {
+            var li = $('<li ><a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>' + this.MenuText + '<span class="fa arrow"></span></a></li>');
+            // var li = $('<li class><a data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample" href="' + this.URL + '"><i class="fa fa-bar-chart-o fa-fw"></i>' + this.MenuText + '<span class="fa arrow"></span></a></li>');
+            //var li = $('<li ><a id="aTag" href="#" onclick="alert("meclicked");"><i class="fa fa-bar-chart-o fa-fw"></i>' + this.MenuText + '<span class="fa arrow"></span></a></li>');
+            if (!this.IsActive) {
+                li.addClass('ui-state-disabled');
+            }
+            if ($(this.List).length == 0) {  
+                $(li).find('span').removeClass('arrow');
+            }
+            li.appendTo(parent);
+            if ($(this.List).length > 0) {
+                var ul = $('<ul class="nav nav-second-level collapse"></ul>');
+                ul.appendTo(li);
+                build2ndLevelMenu(ul, $(this.List));
+            }
+        });
+    }
+
+    function build2ndLevelMenu(parent, item) {
+        $(item).each(function () {
+            //<ul class="nav nav-second-level">
+            //            <li>
+            //                <a href="panels-wells.html">Panels and Wells</a>
+            //            </li>
+            //            <li>
+            //                <a href="buttons.html">Buttons</a>
+            //            </li>
+            //        </ul>
+
+            var li = $('<li><a href="' + this.URL + '">' + this.MenuText + '</a></li>');
+            if (!this.IsActive) {
+                li.addClass('ui-state-disabled');
+            }
+            li.appendTo(parent);
+
+            ////if ($(this.List) != null) {
+            ////    var ul = $('<ul class="nav nav-second-level"></ul>');
+            ////    ul.appendTo(li);
+            ////    //alert('This is List : ' + $(this.List));
+            ////    //buildMenu(ul, $(this.List));
+            ////}
+        });
+    }
+
+</script>
+
+<div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+        <ul class="nav" id="side-menu">
+            <li class="sidebar-search">
+                <div class="input-group custom-search-form">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                </div>
+                <!-- /input-group -->
+            </li>
+            <li>
+                <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="flot.html">Flot Charts</a>
+                    </li>
+                    <li>
+                        <a href="morris.html">Morris.js Charts</a>
+                    </li>
+                </ul>
+                <!-- /.nav-second-level -->
+            </li>
+        </ul>
+    </div>
+</div>

@@ -24,8 +24,14 @@ namespace NewsAppAdmin.MODEL
         [Display(Name = "TitlePath")]
         public string FeedTitlePath { get; set; }
 
+        [Display(Name = "FeedUpdateDatePath")]
+        public string FeedLastUpdateDateTimePath { get; set; }
+
         [Display(Name = "CoverImagePath")]
         public string FeedCoverImagePath { get; set; }
+
+        [Display(Name = "ItemsPath")]
+        public string FeedItemsPath { get; set; }
 
         [Display(Name = "ShortDescPath")]
         public string FeedShortDescPath { get; set; }

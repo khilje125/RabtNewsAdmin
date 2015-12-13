@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="BLLAdminUser.cs" />
     <Compile Include="BLLEmail.cs" />
+    <Compile Include="BLLAdminPages.cs" />
     <Compile Include="BLLFeed.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

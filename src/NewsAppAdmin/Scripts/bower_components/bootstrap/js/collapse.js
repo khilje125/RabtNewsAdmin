@@ -200,7 +200,7 @@
     var $this   = $(this)
 
     if (!$this.attr('data-target')) e.preventDefault()
-
+    alert('sdsdasdasdasdasddasdd');
     var $target = getTargetFromTrigger($this)
     var data    = $target.data('bs.collapse')
     var option  = data ? 'toggle' : $this.data()

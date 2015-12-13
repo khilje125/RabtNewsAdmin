@@ -30,8 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Hammock.ClientProfile">
+      <HintPath>..\packages\TweetSharp.2.3.3.6\lib\4.5\Hammock.ClientProfile.dll</HintPath>
+    </Reference>
     <Reference Include="HtmlAgilityPack">
       <HintPath>..\..\..\..\RoundedLabs\BlackCoTestRepository\CDF_AtterleyRoad\libs\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\TweetSharp.2.3.3.6\lib\4.5\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="SmartThreadPool">
       <HintPath>..\..\..\..\RoundedLabs\BlackCoTestRepository\ThirdPartyAssemblies\SmartThreadPool.dll</HintPath>
@@ -44,19 +50,31 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="TweetSharp">
+      <HintPath>..\packages\TweetSharp.2.3.3.6\lib\4.5\TweetSharp.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommunicationResponse.cs" />
     <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="TwitterFeedsScrapper.cs" />
+    <Compile Include="RSSFeedsScrapper.cs" />
     <Compile Include="MainScrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScrapeHelpper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\NewsAppAdmin.BLL\NewsAppAdmin.BLL.csproj">
+      <Project>{97189cdd-6daa-4321-a2dc-392d025a7b7f}</Project>
+      <Name>NewsAppAdmin.BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NewsAppAdmin.MODEL\NewsAppAdmin.MODEL.csproj">
       <Project>{c4ea5c4a-b4a5-453f-9e48-b57aff6e563a}</Project>
       <Name>NewsAppAdmin.MODEL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

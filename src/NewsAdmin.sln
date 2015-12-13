@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsAppAdmin.MODEL", "NewsA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsAppAdmin.DAL", "NewsAppAdmin.DAL\NewsAppAdmin.DAL.csproj", "{88B11EF3-AFDB-49A6-9C21-ADB7E8141F30}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsAppAdmin.FeedScrapper", "NewsAppAdmin.FeedScrapper\NewsAppAdmin.FeedScrapper.csproj", "{BD69055B-F2BB-4BD0-A725-159778448062}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{88B11EF3-AFDB-49A6-9C21-ADB7E8141F30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88B11EF3-AFDB-49A6-9C21-ADB7E8141F30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88B11EF3-AFDB-49A6-9C21-ADB7E8141F30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD69055B-F2BB-4BD0-A725-159778448062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD69055B-F2BB-4BD0-A725-159778448062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD69055B-F2BB-4BD0-A725-159778448062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD69055B-F2BB-4BD0-A725-159778448062}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

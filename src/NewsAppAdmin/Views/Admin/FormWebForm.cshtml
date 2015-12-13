@@ -1,0 +1,206 @@
+﻿@model NewsAppAdmin.MODEL.ModelAdminPage
+@{
+    ViewBag.Title = "FormWebForm";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>FormWebForm</h2>
+
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Admin Web Form</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-3 center-block">
+         </div>
+            <div class="col-lg-6 center-block">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        Enter Web Form Permission
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                @Html.ValidationSummary(true)
+
+                                @using (Html.BeginForm("FormWebForm", "Admin", FormMethod.Post, new { id = "frmAddAdminPage", role = "form" }))
+                                {
+                                <!-- /.col-lg-6 (nested) -->
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.AdminPageNameEn, new { @class = "control-label" })
+                                        <div class="">
+                                            @Html.TextBoxFor(m => m.AdminPageNameEn, new { @class = "form-control", placeholder = "Enter Page Title En" })
+                                            <p class="help-block control-label">@Html.ValidationMessageFor(m => m.AdminPageNameEn)</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.AdminPageURL, new { @class = "control-label" })
+                                        <div class="">
+                                            @Html.TextBoxFor(m => m.AdminPageURL, new { @class = "form-control", placeholder = "Enter Page URL" })
+                                            <p class="help-block control-label">@Html.ValidationMessageFor(m => m.AdminPageURL)</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.IsActive, new { @class = "checkbox-inline" })
+                                        <div class="checkbox-inline">
+                                            @Html.CheckBoxFor(m => m.IsActive, new { @class = "checkbox" })
+                                            @*<p class="help-block control-label">@Html.ValidationMessageFor(m => m.AdminPageURL)</p>*@
+                                        </div>
+                                    </div>
+
+                                    @*<div class="form-group">
+                                <label>Is Active ?  </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox">
+                                </label>
+                            </div>*@
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.IsShowInMenu, new { @class = "checkbox-inline" })
+                                        <div class="checkbox-inline">
+                                            @Html.CheckBoxFor(m => m.IsShowInMenu, new { @class = "checkbox" })
+                                        </div>
+                                    </div>
+
+                                    @*<div class="form-group">
+                                <label>Will Apprear in Menu </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox">
+                                </label>
+                            </div>*@
+
+                                    @*<div class="form-group">
+                                @Html.LabelFor(m => m.FeedChannelName, new { @class = "control-label" })
+                                <div class="">
+                                    @Html.TextBoxFor(m => m.FeedChannelName, new { @class = "form-control", placeholder = "Channel Name" })
+                                    <p class="help-block control-label">@Html.ValidationMessageFor(m => m.FeedChannelName)</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.FeedCategory, new { @class = "control-label" })
+                                <div class="">
+                                    @Html.TextBoxFor(m => m.FeedCategory, new { @class = "form-control", placeholder = "Feed Category" })
+                                    <p class="help-block control-label">@Html.ValidationMessageFor(m => m.FeedCategory)</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.FeedCategoryPath, new { @class = "control-label" })
+                                <div class="">
+                                    @Html.TextBoxFor(m => m.FeedCategoryPath, new { @class = "form-control", placeholder = "Category Path" })
+                                    <p class="help-block control-label">@Html.ValidationMessageFor(m => m.FeedCategoryPath)</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.FeedURL, new { @class = "control-label" })
+                                <div class="">
+                                    @Html.TextBoxFor(m => m.FeedURL, new { @class = "form-control", placeholder = "For Example : http://www.bbc.com/arabic/index.xml" })
+                                    <p class="help-block control-label">@Html.ValidationMessageFor(m => m.FeedURL)</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.FeedTitlePath, new { @class = "control-label" })
+                                <div class="">
+                                    @Html.TextBoxFor(m => m.FeedTitlePath, new { @class = "form-control", placeholder = "Title Path" })
+                                    <p class="help-block control-label">@Html.ValidationMessageFor(m => m.FeedTitlePath)</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.FeedShortDescPath, new { @class = "control-label" })
+                                <div class="">
+                                    @Html.TextBoxFor(m => m.FeedShortDescPath, new { @class = "form-control", placeholder = "Short Description Path" })
+                                    <p class="help-block control-label">@Html.ValidationMessageFor(m => m.FeedShortDescPath)</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.FeedPostDetailsPath, new { @class = "control-label" })
+                                <div class="">
+                                    @Html.TextBoxFor(m => m.FeedPostDetailsPath, new { @class = "form-control", placeholder = "Post Details Path" })
+                                    <p class="help-block control-label">@Html.ValidationMessageFor(m => m.FeedPostDetailsPath)</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.FeedPubDatePath, new { @class = "control-label" })
+                                <div class="">
+                                    @Html.TextBoxFor(m => m.FeedPubDatePath, new { @class = "form-control", placeholder = "Publish Date Path" })
+                                    <p class="help-block control-label">@Html.ValidationMessageFor(m => m.FeedPubDatePath)</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Feed Title Image</label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox">Is Image in Root Rss
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.FeedImagePath, new { @class = "control-label" })
+                                <div class="">
+                                    @Html.TextBoxFor(m => m.FeedImagePath, new { @class = "form-control", placeholder = "Rss Root Image Path" })
+                                    <p class="help-block control-label">@Html.ValidationMessageFor(m => m.FeedImagePath)</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Rss Cover Image</label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox">Is Feed Cover Image available
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.FeedCoverImagePath, new { @class = "control-label" })
+                                <div class="">
+                                    @Html.TextBoxFor(m => m.FeedCoverImagePath, new { @class = "form-control", placeholder = "Rss Root Cover Image Path" })
+                                    <p class="help-block control-label">@Html.ValidationMessageFor(m => m.FeedCoverImagePath)</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.FeedDetailPageImagePath, new { @class = "control-label" })
+                                <div class="">
+                                    @Html.TextBoxFor(m => m.FeedDetailPageImagePath, new { @class = "form-control", placeholder = "Detail Page Image Path" })
+                                    <p class="help-block control-label">@Html.ValidationMessageFor(m => m.FeedDetailPageImagePath)</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.FeedSubCategoryPath, new { @class = "control-label" })
+                                <div class="">
+                                    @Html.TextBoxFor(m => m.FeedSubCategoryPath, new { @class = "form-control", placeholder = "Sub Category Path" })
+                                    <p class="help-block control-label">@Html.ValidationMessageFor(m => m.FeedSubCategoryPath)</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.FeedDetailPageURLPath, new { @class = "control-label" })
+                                <div class="">
+                                    @Html.TextBoxFor(m => m.FeedDetailPageURLPath, new { @class = "form-control", placeholder = "Detail Page URL Path" })
+                                    <p class="help-block control-label">@Html.ValidationMessageFor(m => m.FeedDetailPageURLPath)</p>
+                                </div>
+                            </div>*@
+
+                                    <button type="submit" class="btn btn-primary center btn-lg btn-block">Add Page</button>
+
+
+                                }
+                            </div>
+                            <!-- /.col-lg-6 (nested) -->
+                        </div>
+                        <!-- /.row (nested) -->
+                    </div>
+                    <!-- /.panel-body -->
+
+                </div>
+                <!-- /.panel -->
+            </div>
+            <!-- /.col-lg-12 -->
+        <div class="col-lg-3 center-block">
+        </div>
+        </div>
+    <!-- /.row -->
+    <div id="partialview">
+        @{ Html.RenderAction("AdminPagesList", "Admin"); }
+    </div>
+    <div id="divRssLinkList">
+    </div>
+</div>
