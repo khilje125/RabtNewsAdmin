@@ -18,5 +18,7 @@ namespace NewsAppAdmin.MODEL
         public string DetailPagePostDetail { get; set; }
         public string Category { get; set; }
         public string SubCategory { get; set; }
+
+        public List<ModelFeedMultimedia> FeedImageList { get; set; }
     }
 }

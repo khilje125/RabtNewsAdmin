@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModelFeedMultimedia.cs" />
+    <Compile Include="ModelFeedsDetailScrappingHelper.cs" />
     <Compile Include="ModelTwitterFeedsDetails.cs" />
     <Compile Include="ModelTwitterFeeds.cs" />
     <Compile Include="ModelLeftMenu.cs" />

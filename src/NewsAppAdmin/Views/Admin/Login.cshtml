@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>Now News Admin Panel</title>
     <!-- Bootstrap Core CSS -->
     <link href="../Scripts/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- MetisMenu CSS -->
@@ -25,15 +25,28 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style type="text/css">
+    body.login {
+        /*background-image: url("../Content/CustomImages/backSignup.png");
+        background-repeat: repeat-x repeat-y;*/
+        background: #0AA333 none repeat scroll 0% 0%;
+        margin: 0px;
+        padding: 0px;
+        font: 13px "ProximaNova-Regular",helvetica,arial,sans-serif;
+        height: 100%;
+    }
+</style>
 </head>
-<body>
+<body id="login" class="login">
     <div class="container">
+        
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
                 <div class="login-panel panel panel-default">
-                    <div class="panel-heading">
+                    <img src="../Content/CustomImages/main_logo.PNG" class="img-responsive img-circle center-block" alt="main-logo" width="150" height="70" />
+                    @*<div class="panel-heading">
                         <h3 class="panel-title">Please Sign In</h3>
-                    </div>
+                    </div>*@
                     <div class="panel-body">
                         @Html.ValidationSummary(true)
 
@@ -79,11 +92,11 @@
                                 </div>*@
                                 <div class="checkbox">
                                     <label>
-                                        <input name="RememberMe" type="checkbox" value="Remember Me">Remember Me
+                                        <input name="RememberMe" type="checkbox" value="Remember Me">Keep me logged In
                                     </label>
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <input type="submit" class="btn btn-lg btn-success btn-block" value="Login">
+                                <input type="submit" class="btn btn-lg btn-success btn-block" value="Log In">
                                 @*<a href="@Url.Action("Category", "Admin")" class="btn btn-lg btn-success btn-block">Login</a>*@
                             </fieldset>
                         }

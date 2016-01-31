@@ -9,6 +9,10 @@ namespace NewsAppAdmin.MODEL
 {
     public class ModelTwitterFeeds
     {
+        public ModelTwitterFeeds()
+        {
+        }
+
         public double FeedId { get; set; }
         public double UserPageId { get; set; }
         public string UserPageTitle { get; set; }

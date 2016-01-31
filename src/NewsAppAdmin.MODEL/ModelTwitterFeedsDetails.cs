@@ -11,13 +11,14 @@ namespace NewsAppAdmin.MODEL
         public ModelTwitterFeedsDetails()
         { 
         }
-
-        public double TwitterPageId { get; set; }
+        
+        public long TwitterPageId { get; set; }
         public string FeedText{ get; set; }
         public string FeedLanguage { get; set; }
         public string FeedTextDetail { get; set; }
-        public double FeedPostId { get; set; }
+        public string FeedDetailPageURL { get; set; }
+        public long FeedPostedtId { get; set; }
         public DateTime FeedPostDate { get; set; }
-        public string FeedImageURL { get; set; }
+        public List<ModelFeedMultimedia> FeedMultimediaList { get; set; }
     }
 }
